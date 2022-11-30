@@ -60,11 +60,34 @@
 
     #rec-played .card {
         width: calc(50% - 0.75rem);
-        margin-bottom: 0.75rem;
+    }
+
+    #for-user {
+        width: 100%;
+    }
+
+    #pop-artists {
+        width: 100%;
     }
 }
 
 /* MEDIA MOBILE PICCOLO */
 @media screen and (max-width: 600px) {
-    
+    /* sezione laterale */
+    aside {
+        width: 5%;
+    }
+
+    aside .playlist-create,aside .playlists {
+        display: none;
+    }
+
+    /* interfaccia */
+    #main-viewport {
+        width: 95%;
+    }
+
+    .page-nav > ul > li {
+        width: 25%;
+    }
 }
