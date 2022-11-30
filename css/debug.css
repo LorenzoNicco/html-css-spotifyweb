@@ -1,4 +1,37 @@
 /***********************
+ logo
+************************/
+.debug aside .logo {
+    background-color: var(--debug-img-color);
+    border: var(--debug-border);
+}
+
+/***********************
+ main
+************************/
+.debug aside li {
+    background-color: yellow;
+    border: var(--debug-border);
+}
+
+.debug aside .playlist-create > div:first-child {
+    background-color: var(--debug-title-color);
+    border: var(--debug-border);
+}
+
+.debug aside .playlist-create > div:last-child {
+    background-color: brown;
+    border: var(--debug-border);
+}
+
+/***********************
+ footer
+************************/
+.debug aside footer .aside-footer {
+    background-color: aqua;
+    border: var(--debug-border);
+}
+/***********************
  navigazione pagine
 ************************/
 .debug .page-nav li {

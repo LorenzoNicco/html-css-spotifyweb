@@ -8,7 +8,33 @@
 aside {
     background-color: black;
     width: 10%;
+    height: 100vh;
+    padding: 1rem 1rem 5rem;
 }
+
+aside header {
+    flex-grow: 0;
+}
+
+aside main {
+    flex-grow: 1;
+}
+
+aside footer {
+    flex-grow: 0;
+}
+
+/***********************
+ menù e playlist
+************************/
+aside > main > nav {
+    margin: 1rem 0;
+}
+
+aside .playlists {
+    overflow: auto;
+}
+
 
 /*********************************************
  INTERFACCIA

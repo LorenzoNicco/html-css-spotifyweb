@@ -20,6 +20,10 @@ ul {
     justify-content: space-between;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
 /* VARIABILI */
 :root {
     --debug-border: 2px dashed white;
