@@ -56,15 +56,22 @@ aside .playlists {
     position: sticky;
     top: 0;
     text-align: right;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     z-index: 20;
 }
 
 .upgrade-banner > button {
     background-color: transparent;
     border: 2px solid white;
+    border-radius: 50px;
+    padding: 1rem;
+    width: 200px;
+    margin-right: 5px;
+}
+
+.upgrade-banner > button > a {
+    text-decoration: none;
     color: white;
-    border-radius: 20px;
 }
 
 /***********************
@@ -73,6 +80,21 @@ aside .playlists {
 .page-nav > ul {
     width: 60%;
     margin: 1rem auto 0;
+}
+
+.page-nav > ul > li {
+    padding: 0.5rem;
+}
+
+.page-nav .underline-li > hr {
+    border: 1px solid #adff2f;
+    width: 33%;
+    margin: 5px auto 0;
+}
+
+.page-nav a {
+    text-decoration: none;
+    color: var(--gray-color-text);
 }
 
 /***********************
@@ -91,6 +113,7 @@ aside .playlists {
 #rec-played .card {
     margin-right: 0.75rem;
     width: calc((100% / 6) - 0.75rem);
+    text-align: center;
 }
 
 /***********************
