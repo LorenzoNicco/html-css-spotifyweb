@@ -24,6 +24,10 @@ ul {
     flex-direction: column;
 }
 
+.ai-center {
+    align-items: center;
+}
+
 /* VARIABILI */
 :root {
     --debug-border: 2px dashed white;

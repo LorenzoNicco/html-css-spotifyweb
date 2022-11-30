@@ -43,7 +43,7 @@ aside .playlists {
     background-color: #141922;
     width: 90%;
     height: 100vh;
-    padding: 4rem 0;
+    padding-bottom: 4rem;
     overflow: scroll;
 }
 
@@ -53,11 +53,11 @@ aside .playlists {
 .upgrade-banner {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
     text-align: right;
     padding: 1rem 0;
+    z-index: 20;
 }
 
 .upgrade-banner > button {
@@ -72,7 +72,7 @@ aside .playlists {
 ************************/
 .page-nav > ul {
     width: 60%;
-    margin: 0 auto;
+    margin: 1rem auto 0;
 }
 
 /***********************
@@ -138,4 +138,5 @@ aside .playlists {
     position: fixed;
     bottom: 0;
     right: 0;
+    padding: 1rem;
 }

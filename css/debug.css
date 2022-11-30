@@ -73,3 +73,16 @@
     background-color: var(--debug-subtitle-color);
     border: var(--debug-border);
 }
+
+/***********************
+ footer
+************************/
+.debug .console-left,.console-right {
+    background-color: brown;
+    border: var(--debug-border);
+}
+
+.debug .console-buttons,.time-range {
+    border: var(--debug-border);
+    background-color: greenyellow;
+}
