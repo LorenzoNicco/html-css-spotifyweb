@@ -23,4 +23,10 @@ ul {
 /* VARIABILI */
 :root {
     --debug-border: 2px dashed white;
+    --debug-img-color: azure;
+    --debug-maintitle-color: coral;
+    --debug-title-color: lightgreen;
+    --debug-subtitle-color: crimson;
+
+    --main-margin: 2rem 0;
 }

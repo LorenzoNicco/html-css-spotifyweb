@@ -3,6 +3,14 @@
 }
 
 /*********************************************
+ SEZIONE LATERALE
+*********************************************/
+aside {
+    background-color: black;
+    width: 10%;
+}
+
+/*********************************************
  INTERFACCIA
 *********************************************/
 #main-viewport {
@@ -42,12 +50,21 @@
     margin: 0 auto;
 }
 
-/*********************************************
- SEZIONE LATERALE
-*********************************************/
-aside {
-    background-color: black;
-    width: 10%;
+/***********************
+ sezione recenti
+************************/
+#rec-played {
+    padding: 1rem;
+    margin: var(--main-margin);
+}
+
+#rec-played .cards {
+    margin-top: 1.5rem;
+}
+
+#rec-played .card {
+    margin-right: 0.75rem;
+    width: calc((100% / 6) - 0.75rem);
 }
 
 /*********************************************

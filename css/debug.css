@@ -5,3 +5,38 @@
     border: var(--debug-border);
     background-color: yellow;
 }
+
+/***********************
+ debug cards
+************************/
+.debug 
+#rec-played > div:first-child,
+#for-user > div:first-child,
+#pop-artists > div:first-child {
+    background-color:var(--debug-maintitle-color);
+    border: var(--debug-border);
+    width: fit-content;
+}
+
+.debug 
+#for-user > div:nth-child(2),
+#pop-artists > div:nth-child(2) {
+    background-color: var(--debug-subtitle-color);
+    border: var(--debug-border);
+    width: fit-content;
+}
+
+.debug .card > .song-cover {
+    background-color: var(--debug-img-color);
+    border: var(--debug-border);
+}
+
+.debug .card > div:nth-child(2) {
+    background-color: var(--debug-title-color);
+    border: var(--debug-border);
+}
+
+.debug .card > div:last-child {
+    background-color: var(--debug-subtitle-color);
+    border: var(--debug-border);
+}
