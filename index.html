@@ -18,19 +18,64 @@
     
     <title>Spotify web</title>
 </head>
-<body>
+<body class="debug">
     <!-- MAIN -->
-    <main>
+    <main id="app-screen" class="container-flex">
+        <!-- SEZIONE LATERALE -->
+        <aside>
+            <header>
+                <div class="logo">CONTENUTO immagine</div>
+            </header>
+            
+            <main>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div>
+                    <div>CONTENUTO titolo</div>
+
+                    <div>CONTENUTO</div>
+                </div>
+
+                <div class="playlists">
+                    <ul>
+                        <li>CONTENUTO</li>
+                        <li>CONTENUTO</li>
+                        <li>CONTENUTO</li>
+                        <li>CONTENUTO</li>
+                        <li>CONTENUTO</li>
+                        <li>CONTENUTO</li>
+                        <li>CONTENUTO</li>
+                    </ul>
+                </div>
+            </main>
+            
+            <footer>
+                <div class="aside-footer"></div>
+            </footer>
+        </aside>
+
         <!-- INTERFACCIA -->
-        <section>
+        <section id="main-viewport">
             <!-- sezione upgrade -->
-            <div>
-                <button></button>
+            <div class="upgrade-banner">
+                <button>EFFETTUA L'UPGRADE</button>
             </div>
 
             <!-- navigazione pagine -->
-            <nav>
-                <ul>
+            <nav class="page-nav">
+                <ul class="container-flex">
                     <li>
                         <a href="#">Link</a>
                     </li>
@@ -149,47 +194,6 @@
                 </div>
             </section>
         </section>
-
-        <!-- SEZIONE LATERALE -->
-        <aside>
-            <section id="lateral-bar">
-                <div class="logo">CONTENUTO immagine</div>
-
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">Link</a>
-                        </li>
-                        <li>
-                            <a href="#">Link</a>
-                        </li>
-                        <li>
-                            <a href="#">Link</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div>
-                    <div>CONTENUTO titolo</div>
-
-                    <div>CONTENUTO</div>
-                </div>
-
-                <div class="playlists">
-                    <ul>
-                        <li>CONTENUTO</li>
-                        <li>CONTENUTO</li>
-                        <li>CONTENUTO</li>
-                        <li>CONTENUTO</li>
-                        <li>CONTENUTO</li>
-                        <li>CONTENUTO</li>
-                        <li>CONTENUTO</li>
-                    </ul>
-                </div>
-
-                <div class="aside-footer"></div>
-            </section>
-        </aside>
     </main>
 
     <!-- CONSOLE -->

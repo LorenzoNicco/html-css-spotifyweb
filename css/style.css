@@ -1,0 +1,62 @@
+#app-screen {
+    min-height: 600px;
+}
+
+/*********************************************
+ INTERFACCIA
+*********************************************/
+#main-viewport {
+    background-color: #141922;
+    width: 90%;
+}
+
+/***********************
+ sezione upgrade
+************************/
+.upgrade-banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: right;
+    padding: 1rem 0;
+}
+
+.upgrade-banner > button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+}
+
+/***********************
+ navigazione pagine
+************************/
+.page-nav {
+    margin-top: 4rem;
+}
+
+.page-nav > ul {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*********************************************
+ SEZIONE LATERALE
+*********************************************/
+aside {
+    background-color: black;
+    width: 10%;
+}
+
+/*********************************************
+ CONSOLE
+*********************************************/
+#console {
+    background-color: #282828;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

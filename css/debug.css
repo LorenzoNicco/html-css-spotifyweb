@@ -1,0 +1,7 @@
+/***********************
+ navigazione pagine
+************************/
+.debug .page-nav li {
+    border: var(--debug-border);
+    background-color: yellow;
+}

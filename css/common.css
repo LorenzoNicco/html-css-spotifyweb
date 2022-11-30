@@ -9,3 +9,18 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+ul {
+    list-style: none;
+}
+
+/* FLEX */
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* VARIABILI */
+:root {
+    --debug-border: 2px dashed white;
+}
