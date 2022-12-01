@@ -182,7 +182,7 @@ aside > main > nav {
     height: 100%;
 }
 
-#console .console-left {
+#console .console-left,#console .console-right {
     width: 12rem;
     padding: 0.5rem;
 }
@@ -191,10 +191,70 @@ aside > main > nav {
     width: 2rem;
 }
 
+#console .console-left .song-title {
+    margin-left: 5px;
+} 
+
 #console .console-left h4 {
     font-size: 0.7rem;
 }
 
 #console .console-left p {
     font-size: 0.5rem;
+}
+
+#console .console-middle {
+    width: 40%;
+}
+
+#console .console-buttons > i {
+    margin: 0 5px;
+}
+
+#console .console-buttons > i:nth-child(3) {
+    margin: 0 10px;
+}
+
+#console .console-buttons, #console .time-range {
+    height: 50%;
+}
+
+#console .time-range > span {
+    color: white;
+    font-size: 0.7rem;
+}
+
+#console .time-range > .range-out {
+    width: 80%;
+    height: 4px;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+#console .range-out > .range-in {
+    width: 30%;
+    height: 100%;
+    background-color: #c1c1c1;
+    border-radius: 10px;
+}
+
+#console .console-right > i {
+    flex-grow: 0;
+    margin-right: 10px;
+}
+
+#console .console-right > .range-out {
+    min-width: 20px;
+    height: 4px;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+#console .console-right .range-in {
+    width: 20%;
+    height: 100%;
+    background-color: #c1c1c1;
+    border-radius: 10px;
 }

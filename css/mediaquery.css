@@ -51,6 +51,11 @@
     #pop-artists .card {
         width: calc(50% - 0.75rem);
     }
+
+    /* console */
+    #console .console-left .buttons > button {
+        display: block;
+    }
 }
 
 /* MEDIA MOBILE PICCOLO */
