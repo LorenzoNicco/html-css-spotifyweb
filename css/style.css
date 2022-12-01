@@ -9,19 +9,18 @@ aside {
     background-color: black;
     width: 12rem;
     height: 100%;
-    padding: 1rem 1rem 5rem;
 }
 
-aside header {
-    flex-grow: 0;
+aside .aside-top {
+    padding: 1rem;
+    height: calc(100% - 78px);
 }
 
-aside main {
-    flex-grow: 1;
-}
-
-aside footer {
-    flex-grow: 0;
+/***********************
+ logo
+************************/
+aside .logo img {
+    width: 70%;
 }
 
 /***********************
@@ -31,6 +30,52 @@ aside > main > nav {
     margin: 1rem 0;
 }
 
+/***********************
+ sezione inferiore
+************************/
+aside .aside-footer {
+    padding: 0 1rem;
+}
+aside .aside-footer > div:first-child {
+    line-height: 2rem;
+    border-bottom: 1px solid white;
+}
+
+aside .aside-footer div:first-child img {
+    height: 0.7rem;
+    width: 0.7rem;
+    vertical-align: middle;
+}
+
+aside .aside-footer div:first-child > button {
+    vertical-align: middle;
+    font-size: 0.7rem;
+    color: var(--gray-color-text);
+    background-color: transparent;
+    border: none;
+}
+
+aside .aside-footer > div:last-child {
+    line-height: 2.5rem;
+    margin-top: 5px;
+}
+
+aside .aside-footer div:last-child img {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: gray;
+    vertical-align: middle;
+}
+
+aside .aside-footer div:last-child > button {
+    background-color: transparent;
+    font-size: 1rem;
+    color: white;
+    margin-left: 5px;
+    border: none;
+    vertical-align: middle;
+}
 
 /*********************************************
  INTERFACCIA
