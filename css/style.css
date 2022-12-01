@@ -1,5 +1,5 @@
 #app-screen {
-    min-height: 600px;
+    height: calc(100vh - 4rem);
 }
 
 /*********************************************
@@ -7,8 +7,8 @@
 *********************************************/
 aside {
     background-color: black;
-    width: 10%;
-    height: 100vh;
+    width: 8rem;
+    height: 100%;
     padding: 1rem 1rem 5rem;
 }
 
@@ -31,20 +31,14 @@ aside > main > nav {
     margin: 1rem 0;
 }
 
-aside .playlists {
-    overflow: auto;
-}
-
 
 /*********************************************
  INTERFACCIA
 *********************************************/
 #main-viewport {
     background-color: #141922;
-    width: 90%;
-    height: 100vh;
-    padding-bottom: 4rem;
-    overflow: scroll;
+    width: calc(100% - 8rem);
+    overflow: auto;
 }
 
 /***********************
@@ -52,11 +46,10 @@ aside .playlists {
 ************************/
 .upgrade-banner {
     background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
     position: sticky;
     top: 0;
     text-align: right;
-    padding: 1.5rem 0;
+    padding: 1rem 0 1.5rem;
     z-index: 20;
 }
 
@@ -64,7 +57,7 @@ aside .playlists {
     background-color: transparent;
     border: 2px solid white;
     border-radius: 50px;
-    padding: 1rem;
+    padding: 0.7rem;
     width: 200px;
     margin-right: 5px;
 }
@@ -77,11 +70,6 @@ aside .playlists {
 /***********************
  navigazione pagine
 ************************/
-.page-nav > ul {
-    width: 60%;
-    margin: 1rem auto 0;
-}
-
 .page-nav > ul > li {
     padding: 0.5rem;
 }
@@ -158,8 +146,9 @@ aside .playlists {
 #console {
     background-color: #282828;
     width: 100%;
+    height: 4rem;
     position: fixed;
     bottom: 0;
     right: 0;
-    padding: 1rem;
+    z-index: 20;
 }
