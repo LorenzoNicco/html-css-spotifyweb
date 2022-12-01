@@ -7,7 +7,7 @@
 *********************************************/
 aside {
     background-color: black;
-    width: 8rem;
+    width: 12rem;
     height: 100%;
     padding: 1rem 1rem 5rem;
 }
@@ -37,7 +37,7 @@ aside > main > nav {
 *********************************************/
 #main-viewport {
     background-color: #141922;
-    width: calc(100% - 8rem);
+    width: calc(100% - 12rem);
     overflow: auto;
 }
 
@@ -72,6 +72,7 @@ aside > main > nav {
 ************************/
 .page-nav > ul > li {
     padding: 0.5rem;
+    text-align: center;
 }
 
 .page-nav .underline-li > hr {
@@ -166,4 +167,34 @@ aside > main > nav {
     bottom: 0;
     right: 0;
     z-index: 20;
+}
+
+#console button {
+    background-color: transparent;
+    border: none;
+}
+
+#console i {
+    color: white;
+}
+
+#console > div {
+    height: 100%;
+}
+
+#console .console-left {
+    width: 12rem;
+    padding: 0.5rem;
+}
+
+#console .console-left img {
+    width: 2rem;
+}
+
+#console .console-left h4 {
+    font-size: 0.7rem;
+}
+
+#console .console-left p {
+    font-size: 0.5rem;
 }
