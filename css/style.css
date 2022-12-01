@@ -110,7 +110,11 @@ aside > main > nav {
 #for-user {
     padding: 1rem;
     margin: var(--main-margin);
-    width: calc(100% / 3);
+    width: 100%;
+}
+
+#for-user p {
+    margin-top: 0.5rem;
 }
 
 #for-user .cards {
@@ -119,7 +123,8 @@ aside > main > nav {
 
 #for-user .card {
     margin-right: 0.75rem;
-    width: calc(50% - 0.75rem);
+    width: calc((100% / 6) - 0.75rem);
+    text-align: center;
 }
 
 /***********************
@@ -128,7 +133,11 @@ aside > main > nav {
 #pop-artists {
     padding: 1rem;
     margin: var(--main-margin);
-    width: calc(100% / 3);
+    width: 100%;
+}
+
+#pop-artists p {
+    margin-top: 0.5rem;
 }
 
 #pop-artists .cards {
@@ -137,7 +146,13 @@ aside > main > nav {
 
 #pop-artists .card {
     margin-right: 0.75rem;
-    width: calc(50% - 0.75rem);
+    width: calc((100% / 6) - 0.75rem);
+    text-align: center;
+}
+
+#pop-artists .card > .song-cover {
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 /*********************************************

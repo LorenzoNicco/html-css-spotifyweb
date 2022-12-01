@@ -23,12 +23,12 @@
         margin-bottom: 0.75rem;
     }
 
-    #for-user {
-        width: 50%;
+    #for-user .card {
+        width: calc(25% - 0.75rem);
     }
 
-    #pop-artists {
-        width: 50%;
+    #pop-artists .card {
+        width: calc(25% - 0.75rem);
     }
 }
 
@@ -44,12 +44,12 @@
         width: calc(50% - 0.75rem);
     }
 
-    #for-user {
-        width: 100%;
+    #for-user .card {
+        width: calc(50% - 0.75rem);
     }
 
-    #pop-artists {
-        width: 100%;
+    #pop-artists .card {
+        width: calc(50% - 0.75rem);
     }
 }
 
