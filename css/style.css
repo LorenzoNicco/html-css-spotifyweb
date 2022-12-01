@@ -12,13 +12,17 @@ aside {
 }
 
 aside .aside-top {
-    padding: 1rem;
     height: calc(100% - 78px);
+    min-height: 200px;
 }
 
 /***********************
  logo
 ************************/
+aside .logo {
+    margin: 1rem;
+}
+
 aside .logo img {
     width: 70%;
 }
@@ -26,8 +30,71 @@ aside .logo img {
 /***********************
  menù e playlist
 ************************/
-aside > main > nav {
+aside main > nav {
     margin: 1rem 0;
+}
+
+aside main > nav li {
+    line-height: 1rem;
+    padding: 0 1rem;
+    margin-bottom: 10px;
+}
+
+aside main > nav li:first-child {
+    border-left: 2px solid #adff2f;
+}
+
+aside main nav li:first-child a {
+    color: white;
+}
+
+aside main nav img {
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+    filter: opacity(0.5);
+}
+
+aside main > nav li:first-child > img {
+    filter: opacity(1);
+}
+
+aside main nav a {
+    color: var(--gray-color-text);
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+aside .playlist-create {
+    padding: 0.5rem 1rem;
+}
+
+aside .playlist-create h3 {
+    margin: 0 0 0.5rem;
+}
+
+aside .playlist-create button {
+    background-color: transparent;
+    color: var(--gray-color-text);
+    font-size: 1rem;
+    border: none;
+}
+
+aside .playlist-create .plus {
+    color: black;
+    background-color: gray;
+    padding: 10px;
+    display: inline-block;
+}
+
+aside .playlists {
+    overflow: auto;
+    margin: 1rem;
+}
+
+aside .playlists li {
+    color: var(--gray-color-text);
+    padding: 5px 0;
 }
 
 /***********************
@@ -35,6 +102,9 @@ aside > main > nav {
 ************************/
 aside .aside-footer {
     padding: 0 1rem;
+    background-color: black;
+    position: relative;
+    z-index: 10;
 }
 aside .aside-footer > div:first-child {
     line-height: 2rem;

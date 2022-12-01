@@ -69,6 +69,14 @@
         display: none;
     }
 
+    aside .aside-footer div:first-child {
+        border: none;
+    }
+
+    aside .aside-footer div > button {
+        display: none;
+    }
+
     /* interfaccia */
     #main-viewport {
         width: calc(100% - 2rem);
