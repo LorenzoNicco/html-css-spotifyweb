@@ -23,8 +23,14 @@ aside .logo {
     margin: 1rem;
 }
 
-aside .logo img {
+aside .logo img:first-child {
     width: 70%;
+}
+
+aside .logo img:last-child {
+    display: none;
+    width: 2rem;
+    height: 2rem;
 }
 
 /***********************
@@ -41,7 +47,8 @@ aside main > nav li {
 }
 
 aside main > nav li:first-child {
-    border-left: 2px solid #adff2f;
+    border-left: 4px solid #adff2f;
+    padding-left:calc(1rem - 4px);
 }
 
 aside main nav li:first-child a {
