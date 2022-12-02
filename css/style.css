@@ -112,7 +112,7 @@ aside .playlists > ul {
 
 aside .playlists li {
     color: var(--gray-color-text);
-    padding: 5px 0;
+    margin-bottom: 10px;
 }
 
 /***********************
@@ -172,6 +172,18 @@ aside .aside-footer div:last-child > button {
     background-color: #141922;
     width: calc(100% - 12rem);
     overflow: auto;
+}
+
+.play-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 35%;
 }
 
 /***********************
@@ -239,6 +251,10 @@ aside .aside-footer div:last-child > button {
     text-align: center;
 }
 
+#rec-played .card > .song-cover {
+    position: relative;
+}
+
 /***********************
  sezione creati per l'utente
 ************************/
@@ -260,6 +276,10 @@ aside .aside-footer div:last-child > button {
     margin-right: 0.75rem;
     width: calc((100% / 6) - 0.75rem);
     text-align: center;
+}
+
+#for-user .card > .song-cover {
+    position: relative;
 }
 
 /***********************
@@ -337,6 +357,10 @@ aside .aside-footer div:last-child > button {
     font-size: 0.5rem;
 }
 
+#console .console-left .buttons > button > i {
+    color: var(--gray-color-text);
+}
+
 #console .console-middle {
     width: 40%;
 }
@@ -391,4 +415,73 @@ aside .aside-footer div:last-child > button {
     height: 100%;
     background-color: #c1c1c1;
     border-radius: 10px;
+}
+
+/*********************************************
+ EFFETTI HOVER
+*********************************************/
+/* INTERFACCIA */
+.upgrade-banner > button:hover {
+    transform: scale(1.2, 1.2) translateX(-15px);
+}
+
+.card:hover .play-overlay {
+    display: block;
+}
+
+/* AISDE */
+
+.page-nav a:hover {
+    filter: brightness(2);
+}
+
+aside main > nav li:hover img {
+    filter: brightness(2);
+}
+
+aside main > nav li:hover a {
+    color: white;
+}
+
+.playlist-create > button:hover {
+    filter: brightness(2);
+    cursor: pointer;
+}
+
+.playlists li:hover {
+    filter: brightness(2);
+    cursor: pointer;
+}
+
+.aside-footer > div:first-child > button:hover {
+    filter: brightness(2);
+    cursor: pointer;
+}
+
+.aside-footer > div:last-child > button:hover {
+    cursor: text;
+}
+
+/* CONSOLE */
+
+#console .console-left p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#console .console-left .buttons > button > i:hover {
+    filter: brightness(2);
+    cursor: pointer;
+}
+
+#console .console-middle .console-buttons:hover {
+    cursor: pointer;
+}
+
+#console .console-middle .console-buttons > i:nth-child(3):hover {
+    transform: scale(1.2, 1.2);
+}
+
+#console .console-right i:hover {
+    cursor: pointer;
 }
