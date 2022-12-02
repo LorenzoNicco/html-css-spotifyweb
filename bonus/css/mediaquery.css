@@ -12,24 +12,6 @@
         width: 20%;
         margin-bottom: 0.75rem;
     }
-
-    #rec-played .cards {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-    #rec-played .card {
-        width: calc(25% - 0.75rem);
-        margin-bottom: 0.75rem;
-    }
-
-    #for-user .card {
-        width: calc(25% - 0.75rem);
-    }
-
-    #pop-artists .card {
-        width: calc(25% - 0.75rem);
-    }
 }
 
 /* MEDIA MOBILE GRANDE */
