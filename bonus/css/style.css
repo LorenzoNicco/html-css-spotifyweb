@@ -239,11 +239,11 @@ aside .aside-footer div:last-child > button {
     padding: 1rem;
     margin: var(--main-margin);
     width: 100%;
+    overflow: hidden;
 }
 
 #rec-played .cards {
     margin-top: 1.5rem;
-    width: 1100px;
     overflow: auto;
 }
 
@@ -322,7 +322,7 @@ aside .aside-footer div:last-child > button {
     position: fixed;
     bottom: 0;
     right: 0;
-    z-index: 20;
+    z-index: 50;
 }
 
 #console button {
