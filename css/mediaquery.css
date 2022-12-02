@@ -91,6 +91,10 @@
         padding: 0;
     }
 
+    aside main > nav li:first-child {
+        box-shadow: none;
+    }
+
     aside main > nav > ul > li > a {
         display: none;
     }

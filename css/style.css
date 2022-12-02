@@ -83,7 +83,7 @@ aside .playlist-create {
 }
 
 aside .playlist-create h3 {
-    margin: 0 0 0.5rem;
+    margin: 0;
 }
 
 aside .playlist-create button {
@@ -92,6 +92,7 @@ aside .playlist-create button {
     font-size: 1rem;
     border: none;
     width: fit-content;
+    margin: 0.5rem 0;
 }
 
 aside .playlist-create .plus {
@@ -205,6 +206,7 @@ aside .aside-footer div:last-child > button {
 .page-nav > ul > li {
     padding: 0.5rem;
     text-align: center;
+    flex-shrink: 1;
 }
 
 .page-nav .underline-li > hr {
