@@ -1,0 +1,88 @@
+/***********************
+ logo
+************************/
+.debug aside .logo {
+    background-color: var(--debug-img-color);
+    border: var(--debug-border);
+}
+
+/***********************
+ main
+************************/
+.debug aside li {
+    background-color: yellow;
+    border: var(--debug-border);
+}
+
+.debug aside .playlist-create > div:first-child {
+    background-color: var(--debug-title-color);
+    border: var(--debug-border);
+}
+
+.debug aside .playlist-create > div:last-child {
+    background-color: brown;
+    border: var(--debug-border);
+}
+
+/***********************
+ footer
+************************/
+.debug aside footer .aside-footer {
+    background-color: aqua;
+    border: var(--debug-border);
+}
+/***********************
+ navigazione pagine
+************************/
+.debug .page-nav li {
+    border: var(--debug-border);
+    background-color: yellow;
+}
+
+/***********************
+ debug cards
+************************/
+.debug 
+#rec-played > div:first-child,
+#for-user > div:first-child,
+#pop-artists > div:first-child {
+    background-color:var(--debug-maintitle-color);
+    border: var(--debug-border);
+    width: fit-content;
+}
+
+.debug 
+#for-user > div:nth-child(2),
+#pop-artists > div:nth-child(2) {
+    background-color: var(--debug-subtitle-color);
+    border: var(--debug-border);
+    width: fit-content;
+}
+
+.debug .card > .song-cover {
+    background-color: var(--debug-img-color);
+    border: var(--debug-border);
+}
+
+.debug .card > div:nth-child(2) {
+    background-color: var(--debug-title-color);
+    border: var(--debug-border);
+}
+
+.debug .card > div:last-child {
+    background-color: var(--debug-subtitle-color);
+    border: var(--debug-border);
+}
+
+/***********************
+ footer
+************************/
+.debug .console-left,.console-right {
+    background-color: brown;
+    border: var(--debug-border);
+}
+
+.debug .console-buttons,.time-range {
+    border: var(--debug-border);
+    background-color: greenyellow;
+}

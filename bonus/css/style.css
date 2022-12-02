@@ -1,0 +1,505 @@
+#app-screen {
+    height: calc(100vh - 4rem);
+}
+
+/*********************************************
+ SEZIONE LATERALE
+*********************************************/
+aside {
+    background-color: black;
+    width: 12rem;
+    height: 100%;
+}
+
+aside .aside-top {
+    height: calc(100% - 78px);
+    min-height: 200px;
+    overflow: hidden;
+}
+
+/***********************
+ logo
+************************/
+aside .logo {
+    margin: 1rem;
+}
+
+aside .logo img:first-child {
+    width: 70%;
+}
+
+aside .logo img:last-child {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+}
+
+/***********************
+ menù e playlist
+************************/
+aside main {
+    height: calc(100% - 70px);
+}
+
+aside main > nav {
+    margin: 1rem 0;
+}
+
+aside main > nav li {
+    line-height: 1rem;
+    padding: 0 1rem;
+    margin-bottom: 10px;
+}
+
+aside main > nav li:first-child {
+    box-shadow: inset 4px 0px 0px 0px #adff2f;
+}
+
+aside main nav li:first-child a {
+    color: white;
+}
+
+aside main nav img {
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+    filter: opacity(0.5);
+}
+
+aside main > nav li:first-child > img {
+    filter: opacity(1);
+}
+
+aside main nav a {
+    color: var(--gray-color-text);
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+aside .playlist-create {
+    padding: 0.5rem 1rem;
+    height: 100%;
+    overflow: hidden;
+}
+
+aside .playlist-create h3 {
+    margin: 0;
+}
+
+aside .playlist-create button {
+    background-color: transparent;
+    color: var(--gray-color-text);
+    font-size: 1rem;
+    border: none;
+    width: fit-content;
+    margin: 0.5rem 0;
+}
+
+aside .playlist-create .plus {
+    color: black;
+    background-color: gray;
+    padding: 10px;
+    display: inline-block;
+}
+
+aside .playlists {
+    overflow: hidden;
+}
+
+aside .playlists > ul {
+    overflow: auto;
+}
+
+aside .playlists li {
+    color: var(--gray-color-text);
+    margin-bottom: 10px;
+}
+
+/***********************
+ sezione inferiore
+************************/
+aside .aside-footer {
+    padding: 0 1rem;
+    background-color: black;
+    position: relative;
+    z-index: 10;
+}
+aside .aside-footer > div:first-child {
+    line-height: 2rem;
+    border-bottom: 1px solid white;
+}
+
+aside .aside-footer div:first-child img {
+    height: 0.7rem;
+    width: 0.7rem;
+    vertical-align: middle;
+}
+
+aside .aside-footer div:first-child > button {
+    vertical-align: middle;
+    font-size: 0.7rem;
+    color: var(--gray-color-text);
+    background-color: transparent;
+    border: none;
+}
+
+aside .aside-footer > div:last-child {
+    line-height: 2.5rem;
+    margin-top: 5px;
+}
+
+aside .aside-footer div:last-child img {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: gray;
+    vertical-align: middle;
+}
+
+aside .aside-footer div:last-child > button {
+    background-color: transparent;
+    font-size: 1rem;
+    color: white;
+    margin-left: 5px;
+    border: none;
+    vertical-align: middle;
+}
+
+/*********************************************
+ INTERFACCIA
+*********************************************/
+#main-viewport {
+    background-color: #141922;
+    width: calc(100% - 12rem);
+    overflow: auto;
+}
+
+.play-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 35%;
+}
+
+/***********************
+ sezione upgrade
+************************/
+.upgrade-banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    text-align: right;
+    padding: 1rem 0 1.5rem;
+    z-index: 20;
+}
+
+.upgrade-banner > button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 0.7rem;
+    width: 200px;
+    margin-right: 5px;
+}
+
+.upgrade-banner > button > a {
+    text-decoration: none;
+    color: white;
+}
+
+/***********************
+ navigazione pagine
+************************/
+.page-nav > ul > li {
+    padding: 0.5rem;
+    text-align: center;
+    flex-shrink: 1;
+}
+
+.page-nav .underline-li > hr {
+    border: 1px solid #adff2f;
+    width: 33%;
+    margin: 5px auto 0;
+}
+
+.page-nav a {
+    text-decoration: none;
+    color: var(--gray-color-text);
+}
+
+/***********************
+ sezione recenti
+************************/
+#rec-played {
+    padding: 1rem;
+    margin: var(--main-margin);
+    width: 100%;
+}
+
+#rec-played .cards {
+    margin-top: 1.5rem;
+}
+
+#rec-played .card {
+    margin-right: 0.75rem;
+    width: calc((100% / 6) - 0.75rem);
+    text-align: center;
+}
+
+#rec-played .card > .song-cover {
+    position: relative;
+}
+
+/***********************
+ sezione creati per l'utente
+************************/
+#for-user {
+    padding: 1rem;
+    margin: var(--main-margin);
+    width: 100%;
+}
+
+#for-user p {
+    margin-top: 0.5rem;
+}
+
+#for-user .cards {
+    margin-top: 1.5rem;
+}
+
+#for-user .card {
+    margin-right: 0.75rem;
+    width: calc((100% / 6) - 0.75rem);
+    text-align: center;
+}
+
+#for-user .card > .song-cover {
+    position: relative;
+}
+
+/***********************
+ sezione artisti popolari
+************************/
+#pop-artists {
+    padding: 1rem;
+    margin: var(--main-margin);
+    width: 100%;
+}
+
+#pop-artists p {
+    margin-top: 0.5rem;
+}
+
+#pop-artists .cards {
+    margin-top: 1.5rem;
+}
+
+#pop-artists .card {
+    margin-right: 0.75rem;
+    width: calc((100% / 6) - 0.75rem);
+    text-align: center;
+}
+
+#pop-artists .card > .song-cover {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/*********************************************
+ CONSOLE
+*********************************************/
+#console {
+    background-color: #282828;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+}
+
+#console button {
+    background-color: transparent;
+    border: none;
+}
+
+#console i {
+    color: white;
+}
+
+#console > div {
+    height: 100%;
+}
+
+#console .console-left,#console .console-right {
+    width: 12rem;
+    padding: 0.5rem;
+}
+
+#console .console-left img {
+    width: 2rem;
+}
+
+#console .console-left .song-title {
+    margin-left: 5px;
+} 
+
+#console .console-left h4 {
+    font-size: 0.7rem;
+}
+
+#console .console-left p {
+    font-size: 0.5rem;
+}
+
+#console .console-left .buttons > button > i {
+    color: var(--gray-color-text);
+}
+
+#console .console-middle {
+    width: 40%;
+}
+
+#console .console-buttons > i {
+    margin: 0 5px;
+}
+
+#console .console-buttons > i:nth-child(3) {
+    margin: 0 10px;
+}
+
+#console .console-buttons, #console .time-range {
+    height: 50%;
+}
+
+#console .time-range > span {
+    color: white;
+    font-size: 0.7rem;
+}
+
+#console .time-range > .range-out {
+    width: 80%;
+    height: 4px;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+#console .range-out > .range-in {
+    width: 30%;
+    height: 100%;
+    background-color: #c1c1c1;
+    border-radius: 10px;
+}
+
+#console .console-right > i {
+    flex-grow: 0;
+    margin-right: 10px;
+}
+
+#console .console-right > .range-out {
+    min-width: 20px;
+    height: 4px;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+#console .console-right .range-in {
+    width: 20%;
+    height: 100%;
+    background-color: #c1c1c1;
+    border-radius: 10px;
+}
+
+#console .thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+    display: none;
+}
+
+/*********************************************
+ EFFETTI HOVER
+*********************************************/
+/* INTERFACCIA */
+.upgrade-banner > button:hover {
+    transform: scale(1.2, 1.2) translateX(-15px);
+}
+
+.card:hover .play-overlay {
+    display: block;
+}
+
+/* AISDE */
+
+.page-nav a:hover {
+    filter: brightness(2);
+}
+
+aside main > nav li:hover img {
+    filter: brightness(2);
+}
+
+aside main > nav li:hover a {
+    color: white;
+}
+
+.playlist-create > button:hover {
+    filter: brightness(2);
+    cursor: pointer;
+}
+
+.playlists li:hover {
+    filter: brightness(2);
+    cursor: pointer;
+}
+
+.aside-footer > div:first-child > button:hover {
+    filter: brightness(2);
+    cursor: pointer;
+}
+
+.aside-footer > div:last-child > button:hover {
+    cursor: text;
+}
+
+/* CONSOLE */
+
+#console .console-left p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#console .console-left .buttons > button > i:hover {
+    filter: brightness(2);
+    cursor: pointer;
+}
+
+#console .console-middle .console-buttons:hover {
+    cursor: pointer;
+}
+
+#console .console-middle .console-buttons > i:nth-child(3):hover {
+    transform: scale(1.2, 1.2);
+}
+
+#console .console-right i:hover {
+    cursor: pointer;
+}
+
+#console .range-out:hover .range-in{
+    background-color: rgb(78, 216, 78);
+    cursor: pointer;
+}
+
+#console .range-out:hover .thumb {
+    display: block;
+    cursor: pointer;
+}

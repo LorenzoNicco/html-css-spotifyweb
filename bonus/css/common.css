@@ -1,0 +1,67 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+h2,h3,h4 {
+    color: white;
+}
+
+h3 {
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    color: var(--gray-color-text);
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+/* FLEX */
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.just-start {
+    justify-content: flex-start;
+}
+
+.just-center {
+    justify-content: center;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+/* VARIABILI */
+:root {
+    --debug-border: 2px dashed white;
+    --debug-img-color: azure;
+    --debug-maintitle-color: coral;
+    --debug-title-color: lightgreen;
+    --debug-subtitle-color: crimson;
+
+    --main-margin: 2rem 0;
+    --gray-color-text: #797c80;
+}
