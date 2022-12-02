@@ -91,11 +91,6 @@
         padding: 0;
     }
 
-    aside main > nav > ul > li:first-child {
-        border: none;
-        padding: 0;
-    }
-
     aside main > nav > ul > li > a {
         display: none;
     }
