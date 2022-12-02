@@ -417,6 +417,14 @@ aside .aside-footer div:last-child > button {
     border-radius: 10px;
 }
 
+#console .thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+    display: none;
+}
+
 /*********************************************
  EFFETTI HOVER
 *********************************************/
@@ -483,5 +491,15 @@ aside main > nav li:hover a {
 }
 
 #console .console-right i:hover {
+    cursor: pointer;
+}
+
+#console .range-out:hover .range-in{
+    background-color: rgb(78, 216, 78);
+    cursor: pointer;
+}
+
+#console .range-out:hover .thumb {
+    display: block;
     cursor: pointer;
 }
