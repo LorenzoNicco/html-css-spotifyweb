@@ -244,7 +244,6 @@ aside .aside-footer div:last-child > button {
 
 #rec-played .cards {
     margin-top: 1.5rem;
-    overflow: auto;
 }
 
 #rec-played .card {
@@ -264,6 +263,7 @@ aside .aside-footer div:last-child > button {
     padding: 1rem;
     margin: var(--main-margin);
     width: 100%;
+    overflow: hidden;
 }
 
 #for-user p {
@@ -291,6 +291,7 @@ aside .aside-footer div:last-child > button {
     padding: 1rem;
     margin: var(--main-margin);
     width: 100%;
+    overflow: hidden;
 }
 
 #pop-artists p {
