@@ -400,12 +400,20 @@ aside .aside-footer div:last-child > button {
     border-radius: 10px;
 }
 
-#console .console-right > i {
+.console-right .cr-left {
+    flex-grow: 0;
+}
+
+.console-right .cr-right {
+    flex-grow: 1;
+}
+
+#console .console-right  i {
     flex-grow: 0;
     margin-right: 10px;
 }
 
-#console .console-right > .range-out {
+#console .console-right  .range-out {
     min-width: 20px;
     height: 4px;
     background-color: #5a5a5a;
