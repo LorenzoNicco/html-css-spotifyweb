@@ -120,6 +120,14 @@
         font-size: 0.5rem;
     }
 
+    .page-nav > ul > li > a {
+        display: none;
+    }
+
+    .page-nav > ul > li > i {
+        display: block;
+    }
+
     /* console */
     .console-left {
         justify-content: space-evenly;

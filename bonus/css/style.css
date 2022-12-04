@@ -232,6 +232,11 @@ aside .aside-footer div:last-child > button {
     color: var(--gray-color-text);
 }
 
+.page-nav > ul > li > i {
+    display: none;
+    color: var(--gray-color-text);
+}
+
 /***********************
  sezione recenti
 ************************/
