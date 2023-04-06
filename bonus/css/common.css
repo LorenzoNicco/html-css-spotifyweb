@@ -65,3 +65,23 @@ p {
     --main-margin: 2rem 0;
     --gray-color-text: #797c80;
 }
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #696969;
+    cursor: pointer;
+}
